@@ -1,0 +1,121 @@
+.container {
+  width: 390px;
+  min-height: 972px; /* 고정된 높이 대신 최소 높이를 사용하여 콘텐츠가 채워질 수 있도록 합니다 */
+  margin-top: 36px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* 수직 중앙 정렬 추가 */
+  margin-bottom: 36px;
+}
+
+.ReportContainer {
+  width: 350px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #f9f9f9;
+  border-radius: 15px;
+  padding-top: 30px;
+  padding-bottom: 46px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.ReportBody {
+  width: 310px;
+  height: auto;
+  margin-top: 20px;
+}
+
+.stock_price {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #e6e6e6; /* 상단 경계선에 색상 및 두께 적용 */
+  border-bottom: 1px solid #e6e6e6; /* 하단 경계선에 색상 및 두께 적용 */
+  border-left: none; /* 좌측 경계선 없음 */
+  border-right: none; /* 우측 경계선 없음 */
+}
+
+.Rise {
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffeded;
+  color: #ff2c44;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 4px;
+}
+
+.Fall {
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  background-color: #d8efff;
+  color: #0087e1;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 4px;
+}
+
+.stock_inf {
+  width: 310px;
+  height: auto;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.stock_content {
+  height: 24px;
+  display: flex;
+}
+
+.button {
+  width: 109px;
+  height: 37px;
+  background-color: #ff2c44; /* 버튼 배경색 */
+  color: white; /* 텍스트 색상 */
+  padding: 10px;
+  font-weight: 500;
+  font-size: 14px; /* 글꼴 크기 */
+  border-radius: 4px; /* 버튼의 모서리를 둥글게 */
+  cursor: pointer; /* 마우스 커서를 포인터로 변경 */
+  transition: background-color 0.3s ease; /* 색상 변화에 애니메이션 추가 */
+}
+
+.imageContainer {
+  text-align: center;
+}
+
+.R14 {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.R16 {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.R18 {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.M14 {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.SB20 {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.SB24 {
+  font-weight: 600;
+  font-size: 24px;
+}

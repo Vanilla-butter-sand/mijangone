@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* 마진과 패딩 제거 */
+  box-sizing: border-box;
+  /* 패딩과 테두리를 포함하도록 설정 -> 실제 크기 예측 쉬워짐 */
+  color: #282828;
+  /*여기에서 전체 폰트 색상을 지정해줄 수 있습니다.*/
+}
+
+body {
+  display: flex;
+  /* 플렉스 컨테이너 설정 -> 수평이나 수직 정렬 용이 */
+  justify-content: center;
+  /* 자식 요소들을 수평으로 가운데 정렬 */
+  overflow-y: auto;
+  overflow-x: auto;
+  /* 수직 및 수평 스크롤을 필요에 따라 자동으로 표시 */
+  background-color: #f0f0f0;
+  /* 페이지 배경색 지정 */
+  min-width: 390px;
+  min-height: 1067px;
+  /* 최소 너비와 높이 설정 */
+}
+
+html,
+body {
+  overflow: -moz-scrollbars-none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+/* 스크롤바를 숨기기 위한 설정 */
+
+/* WebKit 브라우저 (Chrome, Safari 등) */
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;
+}
+/* 스크롤바를 숨기기 위한 설정 */
+
+a {
+  text-decoration: none;
+}
+/* 링크에 기본으로 적용되는 밑줄 제거 */
+
+button {
+  border: none;
+}
+/* 버튼에 기본적으로 적용되는 테두리 제거 */

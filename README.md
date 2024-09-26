@@ -1,44 +1,72 @@
-### 해당 파일은 기본 셋팅을 위한 파일임.
-### client는 프론트, server은 백임.
-### client는 react 기반이고, server는 node.js 기반임
-### database는 몽고 DB를 사용할 예정.(sql 난 사용 가능한데, 데이터베이스 안듣고 하면 정신 나감)
-### 코딩 애플 강의 ID : tkddn3200 PW : rla5458*, 3개 들어오셈요
-### 1. (무료) 매우쉽게 알려주는 git & github 
-    ### 별로 안됨
-### 2. React 리액트 기초부터 쇼핑몰 프로젝트까지!
-    ### part 1이랑 part 2 다 들어야 좋긴 함
-### 3. Node.js, MongoDB로 빠르게 웹서비스 만들기
-    ### 얘 part 3까지 다 들을 필요 없을 듯(저도 다 안 들었음;;)
+# Getting Started with Create React App
 
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-1. server파일 VSCODE로 열고 들어가서
+## Available Scripts
 
-.env 파일 생성
+In the project directory, you can run:
 
-NODE_ENV=development
-DB_NAME_DEV=forum
-DB_PASSWORD_DEV=qwer1234
-PORT_DEV=8000
-ACCESS_TOKEN_DEV=69e209e2482258ec4f4588124722b57830b8c89e
-DB_NAME_PROD=forum
-DB_PASSWORD_PROD=qwer1234
-PORT_PROD=8000
-ACCESS_TOKEN_PROD=69e209e2482258ec4f4588124722b57830b8c89e
+### `npm start`
 
-기입 후 저장
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
+### `npm test`
 
-2. client 따로 VSCODE 창 열어서 .env.development 파일 생성
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-REACT_APP_API_URI="http://localhost:8000"
+### `npm run build`
 
-기입 후 저장
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-3. utils안에 있는 config.js 들어가서
-  configs.mainDbUri = `mongodb+srv://admin:${configs.dbPassword}@cluster0.dbrerof.mongodb.net/${configs.dbName}?readPreference=secondaryPreferred&w=1`
-이런 주소는 내 몽고 DB에 맞게 바꾸면 됨
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
+### `npm run eject`
 
-4. server랑 client 각각 npm install, npm start 하면 됨.
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+# mijangone
