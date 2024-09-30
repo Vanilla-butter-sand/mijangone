@@ -5,18 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>React App with Firebase</title>
 
-    <!-- Firebase SDKs - 모듈 버전으로 변경 -->
-    <script type="module" src="/__/firebase/10.13.2/firebase-app.js"></script>
-    <script type="module" src="/__/firebase/10.13.2/firebase-auth.js"></script>
+    <!-- Firebase SDKs (모듈 방식으로 로드) -->
     <script
       type="module"
-      src="/__/firebase/10.13.2/firebase-firestore.js"
+      src="https://www.gstatic.com/firebasejs/10.13.2/firebase-app.js"
     ></script>
-    <script type="module" src="/__/firebase/init.js?useEmulator=true"></script>
+    <script
+      type="module"
+      src="https://www.gstatic.com/firebasejs/10.13.2/firebase-auth.js"
+    ></script>
+    <script
+      type="module"
+      src="https://www.gstatic.com/firebasejs/10.13.2/firebase-firestore.js"
+    ></script>
 
-    <!-- React 빌드된 파일 추가 -->
+    <!-- React 빌드된 파일 -->
     <link href="/static/css/main.c844d6bb.css" rel="stylesheet" />
     <script defer="defer" src="/static/js/main.b34dbecc.js"></script>
+    <script defer="defer" src="/static/js/main.f4c59aa9.js"></script>
+    <link href="/static/css/main.0421975d.css" rel="stylesheet" />
   </head>
   <body>
     <div id="root"></div>

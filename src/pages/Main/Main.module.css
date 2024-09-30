@@ -1,18 +1,19 @@
 .container {
   width: 390px;
-  min-height: 972px; /* 고정된 높이 대신 최소 높이를 사용하여 콘텐츠가 채워질 수 있도록 합니다 */
+  min-height: 972px;
   margin-top: 36px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; /* 수직 중앙 정렬 추가 */
+  justify-content: flex-start;
   margin-bottom: 36px;
 }
 
 .ReportContainer {
-  width: 350px;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 350px;
   height: auto;
-  display: flex;
   flex-direction: column;
   background-color: #f9f9f9;
   border-radius: 15px;
@@ -29,18 +30,18 @@
   margin-top: 20px;
 }
 
-.stock_price {
+.Report_title {
   height: 60px;
   display: flex;
   align-items: center;
-  border-top: 1px solid #e6e6e6; /* 상단 경계선에 색상 및 두께 적용 */
-  border-bottom: 1px solid #e6e6e6; /* 하단 경계선에 색상 및 두께 적용 */
-  border-left: none; /* 좌측 경계선 없음 */
-  border-right: none; /* 우측 경계선 없음 */
+  justify-content: space-between;
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
 }
 
 .Rise {
   padding: 10px;
+  margin-left: 10px;
   align-items: center;
   justify-content: center;
   background-color: #ffeded;
@@ -52,6 +53,7 @@
 
 .Fall {
   padding: 10px;
+  margin-left: 10px;
   align-items: center;
   justify-content: center;
   background-color: #d8efff;
@@ -76,14 +78,14 @@
 .button {
   width: 109px;
   height: 37px;
-  background-color: #ff2c44; /* 버튼 배경색 */
-  color: white; /* 텍스트 색상 */
+  background-color: #ff2c44;
+  color: white;
   padding: 10px;
   font-weight: 500;
-  font-size: 14px; /* 글꼴 크기 */
-  border-radius: 4px; /* 버튼의 모서리를 둥글게 */
-  cursor: pointer; /* 마우스 커서를 포인터로 변경 */
-  transition: background-color 0.3s ease; /* 색상 변화에 애니메이션 추가 */
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .imageContainer {
@@ -113,6 +115,7 @@
 .SB20 {
   font-weight: 600;
   font-size: 20px;
+  margin-right: auto;
 }
 
 .SB24 {
