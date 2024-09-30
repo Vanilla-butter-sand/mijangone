@@ -1,38 +1,28 @@
 module.exports = {
-  env: {
-    es6: true,
-    node: true,
-    browser: true,
-    commonjs: true,
-    jest: true,
+  parserOptions: {
+    ecmaVersion: 12,
+    sourceType: 'module',
+    requireConfigFile: false, // Babel 설정 파일을 요구하지 않도록 수정
   },
-  parser: '@babel/eslint-parser',
-  extends: ['eslint:recommended', 'plugin:prettier/recommended'],
-  ignorePatterns: ['**/_next/'],
+  env: {
+    browser: true,
+    es2021: true,
+    node: true,
+  },
+  extends: [
+    'eslint:recommended',
+    'plugin:react/recommended',
+    'plugin:jsx-a11y/recommended',
+    'plugin:prettier/recommended',
+  ],
   rules: {
-    'prettier/prettier': [
-      'error',
-      {
-        endOfLine: 'auto',
-      },
-    ],
+    'react/prop-types': 'off',
+    'react/react-in-jsx-scope': 'off',
     'no-unused-vars': 'warn',
-    'no-use-before-define': 'off',
-    'no-console': 'off',
-    'no-shadow': 'off',
-    'import/order': 'off',
-    'consistent-return': 'off',
-    'no-underscore-dangle': 'off',
-    'class-methods-use-this': 'off',
-    'no-await-in-loop': 'off',
-    'no-restricted-syntax': 'off',
-    'lines-between-class-members': [
-      'error',
-      'always',
-      { exceptAfterSingleLine: true },
-    ],
-    'no-param-reassign': 'off',
-    'guard-for-in': 'off',
-    'prefer-destructuring': ['error', { object: false, array: false }],
+  },
+  settings: {
+    react: {
+      version: 'detect',
+    },
   },
 }
