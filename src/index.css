@@ -1,6 +1,5 @@
 /* Google Fonts import */
 @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;700&display=swap');
 /* 외부 스타일 시트를 불러오는 Css 규칙(Noto Serif KR, 주로 한국어 텍스트에 사용) */
 
 body {

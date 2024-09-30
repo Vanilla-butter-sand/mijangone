@@ -3,20 +3,6 @@
     "rules": "firestore.rules",
     "indexes": "firestore.indexes.json"
   },
-  "functions": [
-    {
-      "source": "functions",
-      "codebase": "default",
-      "ignore": [
-        "node_modules",
-        ".git",
-        "firebase-debug.log",
-        "firebase-debug.*.log",
-        "*.local"
-      ]
-      // "predeploy": ["npm --prefix \"$RESOURCE_DIR\" run lint"]  // Lint 명령어 제거
-    }
-  ],
   "hosting": {
     "public": "build",
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
@@ -32,5 +18,11 @@
       "host": "localhost",
       "port": 5002
     }
-  }
+  },
+  "rewrites": [
+    {
+      "source": "**",
+      "destination": "/index.html"
+    }
+  ]
 }

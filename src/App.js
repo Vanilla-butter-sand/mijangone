@@ -26,7 +26,6 @@ function App({ db }) {
       <Routes>
         <Route path='/' element={<Main />} />
       </Routes>
-      <h1>Firestore DB 연결 체크</h1>
     </div>
   )
 }
