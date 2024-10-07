@@ -92,8 +92,6 @@ const Main = () => {
           <p>Loading stocks...</p>
         )}
       </div>
-
-      <button className={styles.button}>미장원 방문하기</button>
     </div>
   )
 }

@@ -64,15 +64,28 @@
 }
 
 .stock_inf {
-  width: 310px;
-  height: auto;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
 }
 
 .stock_content {
-  height: 24px;
   display: flex;
+  align-items: center; /* 체크 표시와 텍스트를 수직으로 중앙 정렬 */
+  gap: 8px; /* 체크 표시와 텍스트 사이의 간격 */
+}
+
+.stock_content img {
+  width: 24px;
+  height: auto;
+}
+
+.R16 {
+  margin: 0;
+  font-size: 16px;
+  padding-left: 4px;
+  padding-right: 4px;
+  line-height: 1.5; /* 텍스트의 줄 간격 */
 }
 
 .button {
